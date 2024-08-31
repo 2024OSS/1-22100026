@@ -30,6 +30,30 @@
             width: 190px;
             float: right;
         }
+        #botten {
+            width: 155px;
+            background-color: #d14836;
+            border: 1px solid #d14836;
+            border-radius: 40px;
+            color: white;
+            margin-top: 10px;
+            padding: 5px;
+            text-align: center;
+            cursor: pointer;
+            list-style-type: none;
+        }
+        #botten:link, #botten:visited {
+            background-color: #d14836;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        #botten:hover, #botten:active {
+            background-color: white;
+            color: #d14836;
+            border-radius: 10;
+        }
         #main {
             padding: 10px;
             font: 80% Verdana;
@@ -45,6 +69,14 @@
         #footer {
             color: white;
             text-align: center;
+            padding-left: 10px;
+            font-size: 70%;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -56,11 +88,11 @@
 
     <div id="maincontainer">
         <div id="menu">
-            <a href="style1.html">Stylesheet 1</a>
-            <a href="style2.html">Stylesheet 2</a>
-            <a href="style3.html">Stylesheet 3</a>
-            <a href="style4.html">Stylesheet 4</a>
-            <a href="nostyle.html">No Stylesheet</a>
+            <a id="botten" id="first" href="style1.html">Stylesheet 1</a>
+            <a id="botten" href="style2.html">Stylesheet 2</a>
+            <a id="botten" href="style3.html">Stylesheet 3</a>
+            <a id="botten" href="style4.html">Stylesheet 4</a>
+            <a id="botten" id="last" href="nostyle.html">No Stylesheet</a>
         </div>
 
         <div id="main">
@@ -70,16 +102,17 @@
                 You can change the layout of this page by selecting different stylesheets in the menu,
                 or by selecting one of the following links:
             </span><br/>
-            <a href="style1.html">Stylesheet1</a>,&nbsp;
-            <a href="style2.html">Stylesheet2</a>,&nbsp;
-            <a href="style3.html">Stylesheet3</a>,&nbsp;
+            <a href="style1.html">Stylesheet1</a>, 
+            <a href="style2.html">Stylesheet2</a>, 
+            <a href="style3.html">Stylesheet3</a>, 
             <a href="style4.html">Stylesheet4</a>.
             <h2>No Styles</h2>
-            <span>
+            <p>
                 This page uses DIV elements to group different sections of the HTML page. 
                 Click here to see how the page looks like with no stylesheet:
-            </span><br/>
-            <a href="nostyle.html">No Stylesheet</a>.
+                <br/>
+                <a href="nostyle.html">No Stylesheet</a>.
+            </p>
         </div>
     </div>
 
