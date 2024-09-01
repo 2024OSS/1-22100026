@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-left:90px;
+            margin-right: 90px;
+        }
+        .box {
+            margin-top: 10px;
+            width: 30px;
+            border-radius: 6px;
+            background-color: black;
+            color: white;
+            margin-bottom: 10px;
+            padding: 5px;
+            text-align: center;
+            display: inline-block;
+            font-size: 130%;
+        }
+        .tag {
+            font-size: 160%;
+        }
+        #header {
+            border-bottom: 1px solid #d4d4d4;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            color: black;
+        }
+        #first {
+            margin-top: 20px;
+            border-radius: 6px;
+            background-color: #f0f0f0;
+            color: black;
+            margin-bottom: 10px;
+            padding: 50px;
+            display: inline-block;
+            font-size: 130%;
+            height: 330px;
+        }
+        .p1 {
+            font-size: 120%;
+            padding-right: 450px;
+        }
+        a {
+            text-decoration: none;
+        }
+        #second {
+            background-color: #282828;
+            color: white;
+            border-radius: 6px;
+            padding: 50px;
+            padding-top: 30px;
+            width: 560px;
+            float: left;
+            margin-top: 10px;
+            margin-right: 5px;
+            height: 220px;
+        }
+        #third {
+            background-color: #f0f0f0;
+            border-radius: 6px;
+            padding: 50px;
+            padding-top: 30px;
+            margin-top: 10px;
+            margin-left: 5px;
+            width: 560px;
+            float: right;
+            height: 220px;
+        }
+        #footer {
+            margin-top: 30px;
+            width: 1340px;
+            float: left ;
+            border-top: 1px solid #d4d4d4;
+        }
+        .b1 {
+            width: 100005px;
+            border-radius: 6px;
+            background-color: #0066ff;
+            color: white;
+            padding: 8px;
+            height: 100px;
+            text-align: center;
+        }
+        .b2 {
+            width: 155px;
+            border: 1px solid white;
+            border-radius: 6px;
+            background-color: #282828;
+            color: white;
+            padding: 8px;
+            text-align: center;
+        }
+        .b3 {
+            width: 155px;
+            border: 1px solid black;
+            border-radius: 6px;
+            background-color: #f0f0f0;
+            color: gray;
+            padding: 8px;
+            text-align: center;
+        }
+        .title {
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a class="box" href="https://getbootstrap.com/">B</a>
+        <a class="tag" href="https://getbootstrap.com/">Jumbotron example</a>
+    </div>
+
+    <div id="main">
+        <div id="first">
+            <h1>Custom jumbotron</h1>
+            <p class="p1">
+                Using a series of utilities, you can create this jumbotron, just like the one in previous versions 
+                of Bootstrap. Check out the example below for how you can remix and restyle it to your liking.
+            </p>
+            <a class="b1" href="#">Example button</a>
+        </div>
+        
+        <div id="second">
+            <p class="title">Change the background</p>
+            <p>
+                Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. 
+                Then, mix and match with additional component themes and more.
+            </p>
+            <a class="b2" href="#">Example button</a>
+        </div>
+
+        <div id="third">
+            <p class="title">Add borders</p>
+            <p>
+                Or, keep it light and add a border for some added definition to the boundaries of your content. 
+                Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing 
+                of both column's content for equal-height.
+            </p>
+            <a class="b3" href="#">Example button</a>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>© 2024</p>
+    </div>
+</body>
+</html>

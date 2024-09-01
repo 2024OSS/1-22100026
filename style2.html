@@ -30,29 +30,33 @@
             width: 190px;
             float: right;
         }
-        #botten {
+        .button {
             width: 155px;
-            background-color: #d14836;
             border: 1px solid #d14836;
             border-radius: 40px;
-            color: white;
-            margin-top: 10px;
-            padding: 5px;
-            text-align: center;
-            cursor: pointer;
-            list-style-type: none;
-        }
-        #botten:link, #botten:visited {
             background-color: #d14836;
             color: white;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            padding: 5px;
             text-align: center;
+        }
+        .button:link {
             text-decoration: none;
             display: inline-block;
         }
-        #botten:hover, #botten:active {
+        .button:hover, .button:active {
             background-color: white;
             color: #d14836;
-            border-radius: 10;
+        }
+        #menu {
+            font: 16px verdana;
+        }
+        .pushed {
+            background-color: white;
+            color: #d14836;
+            border: 1px solid #d14836;
+            font-weight: bold;
         }
         #main {
             padding: 10px;
@@ -69,11 +73,12 @@
         #footer {
             color: white;
             text-align: center;
-            padding-left: 10px;
+            padding-left: 5px;
             font-size: 70%;
         }
         a {
             text-decoration: none;
+            color: #d14836;
         }
         a:hover {
             text-decoration: underline;
@@ -88,11 +93,12 @@
 
     <div id="maincontainer">
         <div id="menu">
-            <a id="botten" href="style1.html">Stylesheet 1</a>
-            <a id="botten" href="style2.html">Stylesheet 2</a>
-            <a id="botten" href="style3.html">Stylesheet 3</a>
-            <a id="botten" href="style4.html">Stylesheet 4</a>
-            <a id="botten" href="nostyle.html">No Stylesheet</a>
+            <br/>
+            <a class="button" href="style1.html">Stylesheet 1</a>
+            <a class="button pushed" href="#">Stylesheet 2</a>
+            <a class="button" href="style3.html">Stylesheet 3</a>
+            <a class="button" href="style4.html">Stylesheet 4</a>
+            <a class="button" href="nostyle.html">No Stylesheet</a>
         </div>
 
         <div id="main">
